@@ -3,7 +3,7 @@
     --themeColorCoral: #ff725e;
     --themeColorYellow: #f8c35c;
     --themeColorBlack: #000;
-    --hoverColor: #0026ff;
+    --hoverColor: #fa4c35;
     --themeColorWhite: #fff;
 }
 
@@ -59,10 +59,14 @@ nav a:hover {
 .participate {
     background-color: var(--themeColorCoral);
     color: var(--themeColorWhite);
+    box-shadow: 0px 10px 10px rgba(110, 110, 110, 0.5);
 }
 
 .participate:hover {
     color: var(--themeColorWhite);
+    background-color: var(--hoverColor);
+    box-shadow: none;
+
 }
 
 .account {
@@ -117,7 +121,7 @@ nav a:hover {
 }
 
 .Header-text h2 {
-    font-size: 40px;
+    font-size: 30px;
     user-select: none;
     color: var(--hoverColor);
 }
@@ -136,8 +140,10 @@ nav a:hover {
     color: var(--themeColorWhite);
     cursor: pointer;
     transition: all 0.35s;
+    box-shadow: 0px 10px 10px rgba(110, 110, 110, 0.5);
 }
 
 .Header-text button:hover {
     background-color: var(--hoverColor);
+    box-shadow: none;
 }
