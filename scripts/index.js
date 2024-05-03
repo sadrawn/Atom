@@ -1,5 +1,5 @@
 // filling header and footer
-import { HeaderFiller, FooterFiller } from "./Filler.js";
+import { HeaderFiller ,FooterFiller } from "./Filler.js";
 FooterFiller();
 HeaderFiller();
 
@@ -13,27 +13,25 @@ function disableScroll() {
     };
 }
 
-// ! activating dropdown
-let dropButton = document.querySelector('.hamburgerMenu');
-let dropdown = document.querySelector('.HeaderDropDown');
+// Activating Dropdown
+const dropButton = document.querySelector('.hamburgerMenu');
+const dropdown = document.querySelector('.HeaderDropDown');
+const exitButton = document.querySelector('.exit'); // Cache the exit button
 
-// coming in 
 dropButton.addEventListener('click', () => {
     dropdown.style.display = "flex";
-    setTimeout(() => {
-        document.querySelector('body').style.overflow = "hidden";
-        dropdown.style.transform = "translateX(0)";
-        dropdown.style.opacity = "1";
-    }, 100);
+    // No need for setTimeout here, directly apply styles
+    document.body.style.overflow = "hidden";
+    dropdown.style.width = `${window.innerWidth}px`; // Use template literals for clarity
+    dropdown.style.transform = "translateX(45px)";
+    dropdown.style.opacity = "1";
 });
 
-// getting out 
-document.querySelector('.exit').addEventListener('click', () => {
-    dropdown.style.transform = "translateX(-100%)";
-    document.querySelector('body').style.overflow = "auto";
-    setTimeout(() => {
-        dropdown.style.opacity = "0";
-        dropdown.style.display = "none";
-    }, 100);
+// Deactivating Dropdown
+exitButton.addEventListener('click', () => {
+    dropdown.style.transform = "translateX(100%)";
+    document.body.style.overflow = "auto";
+    // No need for setTimeout here either
+    dropdown.style.opacity = "0";
+    dropdown.style.display = "none";
 });
-

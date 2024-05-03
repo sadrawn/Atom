@@ -7,261 +7,320 @@
     --themeColorWhite: #fff;
 }
 
-header {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.upperSide {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 10px;
-}
-
-nav a {
-    padding: 15px;
-    background-color: var(--themeColorWhite);
-    border-radius: 100px;
-    text-decoration: none;
-    color: black;
-    transition: all 0.35s;
-}
-
-nav a:hover {
-    color: var(--themeColorCoral);
-    font-weight: bold;
-}
-
-.participate {
-    background-color: var(--themeColorCoral);
-    color: var(--themeColorWhite);
-}
-
-.participate:hover {
-    color: var(--themeColorWhite);
-    background-color: var(--hoverColor);
-    box-shadow: none;
-
-}
-
-.account {
-    width: 100px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.account p {
-    max-width: 100px;
-    font-size: 15px;
-}
-
-.account img {
-    width: 50px;
-    height: 50px;
-    display: inline;
-}
-
-.downSide {
-    width: 100%;
-    height: 800px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    padding: 30px;
-}
-
-.downSide img {
-    width: 50%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    user-select: none;
-    pointer-events: none;
-}
-
-.downSide .Header-text {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    gap: 30px;
-    padding-right: 50px;
-}
-
-.Header-text h2 {
-    font-size: 30px;
-    user-select: none;
-    color: var(--hoverColor);
-}
-
-.Header-text p {
-    max-width: 90%;
-    text-align: justify;
-    font-size: 22px;
-}
-
-.Header-text button {
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    background: var(--themeColorCoral);
-    color: var(--themeColorWhite);
-    cursor: pointer;
-    transition: all 0.35s;
-}
-
-.Header-text button:hover {
-    background-color: var(--hoverColor);
-}
-
-/* ! mobile version  */
-.mobileHeader {
-    display: none;
-}
-
-.HeaderDropDown {
-    width: 400px;
-    height: 110%;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
-    display: none;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 0px;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all 0.5s;
-    position: absolute;
-    z-index: 100;
-    top: 0;
-}
-
-.HeaderDropDown img {
-    width: 30px;
-}
-
-.upperDown {
-    width: 90%;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 0.5px solid;
-}
-
-.upperDown p {
-    font-size: 15px;
-}
-
-.downHead {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    transition: all 0.25s;
-    padding: 10px;
-}
-
-.downHead li:hover {
-    list-style: disc;
-}
-
-.downHead li {
-    width: 100%;
-    height: 40px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin: 5px 0px;
-}
-
-.downHead a {
-    color: black;
-}
-
-.downHead li:hover {
-    background-color: lightgray;
-}
-
-
-@keyframes comein {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@media(max-width:400px) {
+@media screen and (min-width:390px) {
     header {
-        display: none;
         width: 100%;
-        height: 100px;
+        height: auto;
+        padding: 10px 30px;
+        transition: all 0.5s;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .HeaderDropDown {
+        display: none;
+    }
+
+    .HeaderDropDown {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
     }
 
     .mobileHeader {
-        padding: 20px;
+        width: 100%;
+        height: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
+        gap: 20px;
         align-items: center;
-        flex-direction: row;
-        gap: 30px;
+        padding: 10px;
     }
 
-    .hamburgerMenu {
-        width: 20%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .name {
-        font-size: 12px;
-        width: 90%;
-        color: var(--themeColorPurple);
+    .mobileHeader .name {
+        font-size: 15px;
+        color: var(--themeColorCoral);
+        ;
     }
 
     .hamburgerMenu img {
-        width: 50%;
+        width: 30px;
         filter: invert();
+        cursor: pointer;
+    }
+
+    .Header-text button:hover {
+        background-color: var(--hoverColor);
+        cursor: pointer;
     }
 
 
+    .downSide {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .downsideMobile img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .downsideMobile .Header-text {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .downSide h2 {
+        color: var(--themeColorCoral);
+        font-size: 20px;
+    }
+
+    .downSide p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .downSide button {
+        padding: 10px 20px;
+        border: none;
+        font-size: 15px;
+        background-color: var(--themeColorCoral);
+        border-radius: 100px;
+        color: var(--themeColorWhite);
+    }
+
+    /* drop down */
+    .HeaderDropDown {
+        width: 400px;
+        height: 110%;
+        background-color: var(--themeColorWhite);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+        display: none;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0px;
+        opacity: 0;
+        transform: translateX(+100%);
+        transform-origin: top left;
+        transition: all 0.5s;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+    }
+
+    .HeaderDropDown img {
+        width: 30px;
+    }
+
+    .upperDown {
+        width: 90%;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid;
+    }
+
+    .upperDown p {
+        font-size: 15px;
+    }
+
+    .downHead {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        transition: all 0.25s;
+        padding: 10px;
+    }
+
+    .downHead li:hover {
+        list-style: disc;
+    }
+
+    .downHead li {
+        width: 100%;
+        height: 40px;
+        background-color: var(--themeColorWhite);
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin: 5px 0px;
+    }
+
+    .downHead a {
+        color: black;
+    }
+
+    .downHead li:hover {
+        background-color: lightgray;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .mobileHeader .name {
+        font-size: 17px;
+    }
+
+    .Header-text h2 {
+        font-size: 24px;
+    }
+
+    .Header-text p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .mobile {
+        display: none;
+    }
+
+    .pc {
+        display: flex;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .account {
+        cursor: pointer;
+    }
+
+    .upperSide {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav {
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 18px;
+        color: var(--themeColorBlack);
+        border-radius: 100px;
+        transition: all 0.25s;
+    }
+
+    nav a:hover {
+        background-color: rgba(204, 204, 204, 0.212);
+    }
+
+    .account {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80px;
+        height: 80px;
+    }
+
+    .account p {
+        font-size: 18px;
+    }
+
+    .account img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .participate {
+        background-color: var(--themeColorCoral);
+        color: var(--themeColorWhite);
+    }
+
+    .participate:hover {
+        background-color: var(--hoverColor);
+    }
+
+    .downSide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .downSide .Header-text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Header-text button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .downSide {
+        flex-direction: row;
+    }
+
+    .downSide img {
+        width: 50%;
+    }
+
+    .downSide .Header-text {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .upperSide a {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .Header-text p {
+        font-size: 20px;
+    }
+
+    .Header-text h2 {
+        font-size: 25px;
+    }
+
+    .Header-text button {
+        font-size: 20px;
+    }
+
+    .account p {
+        font-size: 15px;
+    }
 }
