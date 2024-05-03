@@ -8,14 +8,16 @@
 }
 
 :root {
-    --themeColorPurple: #475edf ;
-    --themeColorYellow : #f8c35c;
-    --themeColorBlack : #000;
-    --hoverColor:  ;
+    --themeColorPurple: #475edf;
+    --themeColorYellow: #f8c35c;
+    --themeColorBlack: #000;
+    --hoverColor: ;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
