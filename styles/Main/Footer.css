@@ -1,11 +1,4 @@
-:root {
-    --themeColorPurple: #3e5afa;
-    --themeColorCoral: #ff725e;
-    --themeColorYellow: #f8c35c;
-    --themeColorBlack: #000;
-    --hoverColor: #0026ff;
-    --themeColorWhite: #fff;
-}
+
 
 footer {
     width: 100%;
@@ -134,6 +127,7 @@ footer {
     .footerSec p {
         font-size: 20px;
     }
+
     .footerSec a {
         font-size: 20px;
     }

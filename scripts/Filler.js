@@ -26,7 +26,7 @@ let Header = `
                 ارزیابی نظرات شما ارزشمند است و به ما کمک می‌کند تا بهبودهای لازم را ایجاد کرده و به بهترین شکل
                 ممکن خدمات را ارائه دهیم. با تشکر از شما برای همراهی در این مسیر.
             </p>
-            <a href="#">
+            <a href="Querypage.html">
                 <button>شرکت در نظرسجی</button>
             </a>
         </div>
@@ -39,12 +39,12 @@ let Header = `
         </div>
         <div class="downHead">
             <ul>
-                <li><a href="" class="active">صفحه اصلی</a></li>
-                <li><a href="">درباره ما </a></li>
-                <li><a href="">ارتباط با ما </a></li>
-                <li><a href="">ثبت نام</a></li>
-                <li><a href="">ورود</a></li>
-                <li><a href="">شرکت در نظرسنجی</a></lّi>
+                <li><a href="index.html" class="active">صفحه اصلی</a></li>
+                <li><a href="AboutUs.html">درباره ما </a></li>
+                <li><a href="Cotact.html">ارتباط با ما </a></li>
+                <li><a href="SignUp.html">ثبت نام</a></li>
+                <li><a href="Login.html">ورود</a></li>
+                <li><a href="Querypage.html">شرکت در نظرسنجی</a></lّi>
             </ul>
         </div>
     </div>
@@ -56,12 +56,12 @@ let Header = `
     <div class="upperSide">
         <nav>
             <ul>
-                <li><a href="" class="active">صفحه اصلی</a></li>
-                <li><a href="">درباره ما </a></li>
-                <li><a href="">ارتباط با ما </a></li>
-                <li><a href="">ثبت نام</a></li>
-                <li><a href="">ورود</a></li>
-                <li><a href="" class="participate">شرکت در نظرسنجی</a></lّi>
+            <li><a href="index.html" class="active">صفحه اصلی</a></li>
+            <li><a href="AboutUs.html">درباره ما </a></li>
+            <li><a href="Cotact.html">ارتباط با ما </a></li>
+            <li><a href="SignUp.html">ثبت نام</a></li>
+            <li><a href="Login.html">ورود</a></li>
+            <li><a href="Querypage.html" class="participate">شرکت در نظرسنجی</a></lّi>
             </ul>
         </nav>
         <div class="account">
@@ -95,6 +95,7 @@ export function HeaderFiller() {
     headerOnPage.innerHTML = Header;
     console.log('Header inserted successfully');
 }
+
 let Footer = `
     <div class="footerTop">
                     <div class="footerSec">
@@ -119,6 +120,7 @@ let Footer = `
                     </div>
                 </div>
 `;
+
 export function FooterFiller() {
     let footerOnPage = document.querySelector('footer');
     footerOnPage.innerHTML = Footer;

@@ -1,0 +1,6 @@
+
+.downSide {
+    display: none;
+}
+
+@media screen and (max-width:390px) {}
