@@ -1,0 +1,15 @@
+/* ? font space */
+
+/* ! general codes */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --themeColorPurple: #475edf ;
+    --themeColorYellow : #f8c35c;
+    --themeColorBlack : #000;
+    --hoverColor:  ;
+}
