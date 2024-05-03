@@ -1,0 +1,12 @@
+:root {
+    --themeColorPurple: #3e5afa;
+    --themeColorYellow: #f8c35c;
+    --themeColorBlack: #000;
+    --hoverColor: #0026ff;
+    --themeColorWhite: #fff;
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+}

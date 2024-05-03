@@ -1,19 +1,30 @@
 /* ? font space */
+@font-face {
+    font-family: B-kamran;
+    src: url(../resource/Fonts/B-Kamran/B\ Kamran\ Bold_0.ttf);
+}
+
+@font-face {
+    font-family: B-nazanin;
+    src: url(../resource/Fonts/B_NAZANIN/B-NAZANIN.TTF);
+}
 
 /* ! general codes */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: B-kamran;
     direction: rtl;
+    font-size: 30px;
 }
 
 :root {
-    --themeColorPurple: #475edf;
+    --themeColorPurple: #3e5afa;
     --themeColorYellow: #f8c35c;
     --themeColorBlack: #000;
-    --hoverColor: ;
+    --hoverColor: #0026ff;
+    --themeColorWhite: #fff;
 }
 
 li {
@@ -22,4 +33,8 @@ li {
 
 a {
     text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
 }
