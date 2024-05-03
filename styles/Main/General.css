@@ -1,7 +1,7 @@
 /* ? font space */
 @font-face {
-    font-family: B-kamran;
-    src: url(../../resource/Fonts/B-Kamran/B\ Kamran\ Bold_0.ttf);
+    font-family: iran-yekan;
+    src: url(../../resource/Fonts/iranyekanwebmediumfanum.ttf);
 }
 
 @font-face {
@@ -14,9 +14,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: B-nazanin;
+    font-family: iran-yekan;
     direction: rtl;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 :root {
