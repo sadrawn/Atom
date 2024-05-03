@@ -13,3 +13,9 @@
     --themeColorBlack : #000;
     --hoverColor:  ;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
