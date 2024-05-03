@@ -1,12 +1,12 @@
 /* ? font space */
 @font-face {
     font-family: B-kamran;
-    src: url(../resource/Fonts/B-Kamran/B\ Kamran\ Bold_0.ttf);
+    src: url(../../resource/Fonts/B-Kamran/B\ Kamran\ Bold_0.ttf);
 }
 
 @font-face {
     font-family: B-nazanin;
-    src: url(../resource/Fonts/B_NAZANIN/B-NAZANIN.TTF);
+    src: url(../../resource/Fonts/B_NAZANIN/B-NAZANIN.TTF);
 }
 
 /* ! general codes */
