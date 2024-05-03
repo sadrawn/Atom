@@ -90,7 +90,7 @@ section {
     display: none;
 }
 
-@media(max-width:400px) {
+@media(max-width:320px) {
     .container {
         padding: 0;
     }
