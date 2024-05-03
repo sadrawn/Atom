@@ -15,7 +15,6 @@
     align-items: center;
     flex-direction: column;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     padding: 40px;
     border: solid 8px var(--themeColorYellow);
 }
@@ -42,6 +41,7 @@ section {
 }
 
 .card {
+    display: flex;
     width: 400px;
     height: 400px;
     display: flex;
@@ -49,10 +49,10 @@ section {
     align-items: center;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     border-radius: 40px;
     position: relative;
     transition: all 0.45s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
 }
 
 .card img {
@@ -80,5 +80,59 @@ section {
 
 .card:hover {
     scale: 1.1;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:400px) {
+    .container {
+        padding: 0;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card img {
+        top: -50px;
+        left: 20px;
+        width: 80%;
+        height: 100%;
+    }
+
+    .downSide {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        position: relative;
+        padding: 10px;
+        padding: 25px;
+    }
+
+    .downSide img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .downSide .Header-text {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+    }
+
+    .Header-text h2 {
+        font-size: 15px;
+    }
+
+    .Header-text p {
+        font-size: 13px;
+    }
+
+    .Header-text button {
+        font-size: 12px;
+    }
 }
