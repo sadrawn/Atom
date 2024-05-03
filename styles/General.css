@@ -20,7 +20,7 @@
 }
 
 :root {
-    --themeColorPurple: #3e5afa;
+    --themeColorPurple: #ff725e;
     --themeColorYellow: #f8c35c;
     --themeColorBlack: #000;
     --hoverColor: #0026ff;
@@ -37,4 +37,8 @@ a {
 
 body::-webkit-scrollbar {
     width: 8px;
+}
+
+html {
+    scroll-behavior: smooth;
 }

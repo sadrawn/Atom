@@ -1,5 +1,6 @@
 :root {
     --themeColorPurple: #3e5afa;
+    --themeColorCoral: #ff725e;
     --themeColorYellow: #f8c35c;
     --themeColorBlack: #000;
     --hoverColor: #0026ff;
@@ -16,6 +17,7 @@
     border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     padding: 40px;
+    border: solid 8px var(--themeColorYellow);
 }
 
 body {
