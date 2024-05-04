@@ -4,7 +4,7 @@ body {
     transition: all 0.5s;
 }
 
-@media screen and (min-width:390px) {
+@media screen and (min-width:360px) {
     main {
         width: 100%;
         height: auto;

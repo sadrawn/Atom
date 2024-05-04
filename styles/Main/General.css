@@ -39,10 +39,6 @@ body::-webkit-scrollbar {
     width: 8px;
 }
 
-body {
-    padding: 20px;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -54,8 +50,5 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.4);
-    border: 3px rgb(224, 224, 224) solid;
 }

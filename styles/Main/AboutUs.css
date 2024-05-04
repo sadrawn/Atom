@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media screen and (min-width:390px) {
+@media screen and (min-width:360px) {
     main {
         display: flex;
         justify-content: center;
@@ -47,13 +47,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: auto;
+        width: 90px;
+        height: 90px;
         background: white;
         border-radius: 10px;
         cursor: pointer;
         flex-direction: column;
         padding: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+        margin-top: 50px;
     }
 
     .card p {
@@ -89,6 +91,12 @@
 
     #res {
         margin-top: 30px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    #info {
+        margin-top: 100px;
     }
 
     footer {
@@ -111,7 +119,7 @@
         border-radius: 10px;
         font-size: 13px;
         color: black;
-        max-width: 400px;
+        max-width: 300px;
     }
 
     li:hover {
@@ -119,10 +127,72 @@
     }
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (min-width:768px) {
+    .MainHead h1 {
+        font-size: 20px;
+    }
 
-@media screen and (max-width:1024px) {}
+    .MainHead p {
+        font-size: 15px;
+    }
 
-@media screen and (max-width:1600px) {}
+    .card p {
+        font-size: 15px;
+    }
 
-@media screen and (max-width:1920px) {}
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .members p {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .MainHead h1 {
+        font-size: 25px;
+    }
+
+    .MainHead p {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card p {
+        font-size: 17px;
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #info {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+
+    .members p {
+        font-size: 18px;
+    }
+
+    .members span {
+        font-size: 18px;
+    }
+
+    .members li {
+        font-size: 18px;
+    }
+
+    #res {
+        font-size: 18px;
+        margin: 40px 0px;
+    }
+}

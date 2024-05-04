@@ -56,7 +56,7 @@ footer {
 }
 
 /* Responsive */
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 360px) {
 
     .footerTop {
         flex-direction: column;
