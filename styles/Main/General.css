@@ -55,5 +55,7 @@ html {
     align-items: center;
     flex-direction: column;
     padding: 0px;
-    border: solid 8px var(--themeColorYellow);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+    border: 3px rgb(224, 224, 224) solid;
 }

@@ -23,7 +23,7 @@ dropButton.addEventListener('click', () => {
     // No need for setTimeout here, directly apply styles
     document.body.style.overflow = "hidden";
     dropdown.style.width = `${window.innerWidth}px`; // Use template literals for clarity
-    dropdown.style.transform = "translateX(45px)";
+    dropdown.style.transform = "translateX(0)";
     dropdown.style.opacity = "1";
 });
 
