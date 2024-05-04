@@ -122,9 +122,6 @@
         max-width: 300px;
     }
 
-    li:hover {
-        list-style: disc;
-    }
 }
 
 @media screen and (min-width:768px) {
