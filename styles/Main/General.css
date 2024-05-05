@@ -16,7 +16,7 @@
     box-sizing: border-box;
     font-family: iran-yekan;
     direction: rtl;
-    font-size: 20px;
+    font-size: 20px 15px;
 }
 
 :root {

@@ -64,10 +64,12 @@ let Header = `
             <li><a href="Querypage.html" class="participate">شرکت در نظرسنجی</a></lّi>
             </ul>
         </nav>
+        <a href="UserPage.html">
         <div class="account">
             <img src="resource/Images/icons/account-50 (1).png" alt="profile image">
             <p name="username">مهمان</p>
         </div>
+        </a>
     </div>
     <div class="downSide">
         <img src="resource/Images/6770965.jpg" alt="">

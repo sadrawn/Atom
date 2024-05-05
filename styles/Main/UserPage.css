@@ -1,0 +1,57 @@
+.downSide {
+    display: none;
+}
+
+/* responsive code */
+@media screen and (min-width:360px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:1024px) {}
+
+@media screen and (min-width:1280px) {}
+
+@media screen and (min-width:1600px) {}
+
+@media screen and (min-width:1920px) {
+    main {
+        width: 100%;
+        height: 100%;
+        background-color: lightblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    aside {
+        width: 20%;
+        height: 100%;
+        background-color: lightcoral;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        padding: 10px;
+        display: none;
+    }
+
+    aside ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    aside li {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .account img {
+        filter: invert();
+    }
+
+    .account p {
+        display: none;
+    }
+}
