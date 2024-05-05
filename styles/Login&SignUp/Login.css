@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IRANYekanWebRegular";
+  outline: none;
+}
+@font-face {
+  font-family: "IRANYekanWebRegular";
+  src: url("./Font/IRANYekanWebRegular.ttf");
+}
+@font-face {
+  font-family: "IRANYekanWebLight";
+  src: url("./Font/IRANYekanWebLight.ttf");
+}
+:root {
+  --themeColor: #ff725e;
+  --hoverColor: #f05946;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--themeColor);
+}
+a {
+  text-decoration: none;
+}
+
+form {
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginDiv {
+  width: 50%;
+  height: 100%;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  /*  */
+}
+h1 {
+  margin-bottom: 10px;
+}
+.imageDiv {
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.inputDiv {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.txt {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "IRANYekanWebLight";
+  font-weight: 100;
+}
+.signUpLink {
+  color: var(--themeColor);
+  text-decoration: none;
+}
+.signUpLink:hover {
+  color: var(--hoverColor);
+}
+input {
+  border: none;
+  border-radius: 3px;
+  width: 230px;
+  /* height: 28px; */
+  height: 33px;
+  background-color: #fce7e4;
+  padding: 5px 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+input:focus {
+  outline: 1px solid #ff725e;
+}
+::placeholder {
+  font-size: 12px;
+  color: #ff725e;
+}
+
+label {
+  margin-top: 15px;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+.forgetLink {
+  text-decoration: none;
+  font-size: 10px;
+  margin-top: 10px;
+  text-align: right;
+  color: var(--themeColor);
+  margin-left: 90px;
+}
+button {
+  width: 230px;
+  padding: 7px 40px;
+  background-color: var(--themeColor);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.imageDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fce7e4;
+}
+.imageDiv img {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
+.passMessageP {
+  font-size: 10px;
+  color: red;
+  padding-top: 5px;
+}
+
+button:hover {
+  background-color: #f05946;
+}
+.forgetLink:hover {
+  color: #f05946;
+}
+
+/* Responsive */
+@media screen and (max-width: 567px) {
+  form {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    height: 340px;
+  }
+  .inputDiv input {
+    width: 230px;
+    height: 33px;
+  }
+  button {
+    width: 230px;
+    height: 33px;
+  }
+  a {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: -108px;
+  }
+  .signUpLink {
+    margin-right: 0;
+  }
+  .imageDiv img {
+    width: 150px;
+    height: 150px;
+  }
+  .forgetLink {
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: right;
+    color: var(--themeColor);
+    margin-right: 20px;
+  }
+  .imageDiv {
+    display: none;
+  }
+}
