@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/Login&SignUp/signUp.css" />
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    <form action="" method="post">
+      <div class="rightDiv">
+        <h1>عضویت</h1>
+        <h5>
+          قبلا ثبت نام کرده اید؟
+          <span><a href="./Login.html">وارد شوید</a></span>
+        </h5>
+        <div class="inputDiv">
+          <!-- <label for="">نام کاربری :</label> -->
+          <input type="text" class="name" name="name" placeholder="نام" />
+        </div>
+        <div class="inputDiv">
+          <!-- <label for="">نام کاربری :</label> -->
+          <input type="text" class="email" name="email" placeholder="ایمیل" />
+        </div>
+        <div class="inputDiv">
+          <!-- <label for="">نام کاربری :</label> -->
+          <input
+            type="number"
+            minlength="10"
+            class="Gcode"
+            name="Gcode"
+            placeholder="کد ملی"
+          />
+          <p class="GcodeP"></p>
+        </div>
+        <div class="inputDiv">
+          <!-- <label for="">نام کاربری :</label> -->
+          <input
+            type="text"
+            class="pass"
+            name="password"
+            placeholder="رمز عبور"
+          />
+        </div>
+        <div class="inputDiv">
+          <!-- <label for="">نام کاربری :</label> -->
+          <input
+            type="text"
+            class="confirmation"
+            name="confirmation"
+            placeholder="تکرار رمز عبور"
+          />
+          <p class="confirmationErrorP"></p>
+        </div>
+        <div class="radioDivs">
+          <div class="container">
+            <input type="radio" checked="checked" name="lbl" />
+            <label class="checkmark" for="lbl1">هنرجو</label>
+          </div>
+          <div class="container">
+            <input type="radio" checked="checked" name="lbl" />
+            <label class="checkmark" for="lbl2">اولیا</label>
+          </div>
+        </div>
+        <button class="nextBtn">ادامه</button>
+      </div>
+      <div class="leftDiv">
+        <img src="resource/Images/6310505.png" alt="" />
+      </div>
+    </form>
+
+    <!-- </div> -->
+    <script src="scripts/signUpScript.js"></script>
+  </body>
+</html>
+
+<!-- Name of Inputs -->
+<!-- name -->
+<!-- email -->
+<!-- Gcode -->
+<!-- password -->
+<!-- confirmation -->
