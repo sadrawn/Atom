@@ -42,7 +42,7 @@ let Header = `
                 <li><a href="index.html" class="active">صفحه اصلی</a></li>
                 <li><a href="AboutUs.html">درباره ما </a></li>
                 <li><a href="Cotact.html">ارتباط با ما </a></li>
-                <li><a href="SignUp.html">ثبت نام</a></li>
+                <li><a href="signUp.html">ثبت نام</a></li>
                 <li><a href="Login.html">ورود</a></li>
                 <li><a href="Querypage.html">شرکت در نظرسنجی</a></lّi>
             </ul>
@@ -59,7 +59,7 @@ let Header = `
             <li><a href="index.html" class="active">صفحه اصلی</a></li>
             <li><a href="AboutUs.html">درباره ما </a></li>
             <li><a href="Cotact.html">ارتباط با ما </a></li>
-            <li><a href="SignUp.html">ثبت نام</a></li>
+            <li><a href="signUp.html">ثبت نام</a></li>
             <li><a href="Login.html">ورود</a></li>
             <li><a href="Querypage.html" class="participate">شرکت در نظرسنجی</a></lّi>
             </ul>
