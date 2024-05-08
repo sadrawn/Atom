@@ -115,11 +115,12 @@
         margin: 5px 2px;
         width: 49%;
         padding: 10px;
-        border: solid 0.2px gray;
         border-radius: 10px;
+        text-align: center;
         font-size: 13px;
-        color: black;
+        color: white;
         max-width: 300px;
+        background: var(--themeColorCoral);
     }
 
 }

@@ -42,6 +42,7 @@
         ;
     }
 
+
     .hamburgerMenu img {
         width: 30px;
         filter: invert();
@@ -94,7 +95,6 @@
         border: none;
         font-size: 15px;
         background-color: var(--themeColorCoral);
-        border-radius: 100px;
         color: var(--themeColorWhite);
     }
 
@@ -139,6 +139,7 @@
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: start;
         align-items: start;
         transition: all 0.25s;
@@ -149,24 +150,46 @@
         list-style: disc;
     }
 
+    .downHead hr {
+        width: 100%;
+        margin: 10px;
+    }
+
     .downHead li {
         width: 100%;
         height: 40px;
         background-color: var(--themeColorWhite);
         display: flex;
-        align-items: center;
+        align-items: end;
         padding: 10px;
         margin: 5px 0px;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .downHead ul {
+        width: 100%;
+    }
+
+    .downHead li img {
+        width: 20px;
     }
 
     .downHead a {
         color: black;
     }
 
+    .downHead li p {
+        font-size: 14px;
+    }
+
     .downHead li:hover {
         background-color: lightgray;
     }
 
+    header {
+        padding: 10px;
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -181,6 +204,8 @@
     .Header-text p {
         font-size: 17px;
     }
+
+
 }
 
 @media screen and (min-width:1024px) {
@@ -211,6 +236,10 @@
         padding: 10px;
     }
 
+    .upperSide nav li p {
+        font-size: 15px;
+    }
+
     nav {
         width: 80%;
         height: auto;
@@ -222,6 +251,8 @@
     nav ul {
         display: flex;
     }
+
+
 
     nav a {
         padding: 10px;
@@ -245,12 +276,13 @@
     }
 
     .account p {
-        font-size: 18px;
+        font-size: 15px;
+        color: black;
     }
 
     .account img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         object-fit: contain;
         object-position: center;
     }
@@ -258,6 +290,7 @@
     .participate {
         background-color: var(--themeColorCoral);
         color: var(--themeColorWhite);
+        border-radius: 0;
     }
 
     .participate:hover {
@@ -276,6 +309,7 @@
     }
 
     .Header-text button {
+        border-radius: 0;
         font-size: 18px;
     }
 }
@@ -318,4 +352,9 @@
     .account p {
         font-size: 15px;
     }
+
+    .upperSide a li p {
+        font-size: 18px;
+    }
+
 }
