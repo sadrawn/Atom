@@ -1,375 +1,195 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "IRANYekanWebRegular";
-  outline: none;
-}
-@font-face {
-  font-family: "IRANYekanWebRegular";
-  src: url("./Font/IRANYekanWebRegular.ttf");
-}
-@font-face {
-  font-family: "IRANYekanWebLight";
-  src: url("./Font/IRANYekanWebLight.ttf");
-}
-:root {
-  --themeColor: #ff725e;
-  --hoverColor: #f05946;
-}
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--themeColor);
-}
-a {
-  text-decoration: none;
-}
+@media screen and (min-width:360px) {
 
-form {
-  width: 600px;
-  height: 400px;
-  background-color: #fff;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.loginDiv {
-  width: 50%;
-  height: 100%;
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  /*  */
-}
-h1 {
-  margin-bottom: 10px;
-}
-.imageDiv {
-  width: 50%;
-  height: 100%;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-}
-.inputDiv {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-}
-.txt {
-  width: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "IRANYekanWebLight";
-  font-weight: 100;
-}
-.signUpLink {
-  color: var(--themeColor);
-  text-decoration: none;
-}
-.signUpLink:hover {
-  color: var(--hoverColor);
-}
-input {
-  border: none;
-  border-radius: 3px;
-  width: 230px;
-  /* height: 28px; */
-  height: 33px;
-  background-color: #fce7e4;
-  padding: 5px 15px;
-  margin-top: 30px;
-  border-radius: 5px;
-}
-input:focus {
-  outline: 1px solid #ff725e;
-}
-::placeholder {
-  font-size: 12px;
-  color: #ff725e;
-}
-
-label {
-  margin-top: 15px;
-  font-size: 12px;
-  padding-bottom: 5px;
-}
-.forgetLink {
-  text-decoration: none;
-  font-size: 10px;
-  margin-top: 10px;
-  text-align: right;
-  color: var(--themeColor);
-  margin-left: 90px;
-}
-button {
-  width: 230px;
-  padding: 7px 40px;
-  background-color: var(--themeColor);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-.imageDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fce7e4;
-}
-.imageDiv img {
-  width: 250px;
-  height: 250px;
-  background-size: cover;
-}
-.passMessageP {
-  font-size: 10px;
-  color: red;
-  padding-top: 5px;
-}
-
-button:hover {
-  background-color: #f05946;
-}
-.forgetLink:hover {
-  color: #f05946;
-}
-
-/* Responsive */
-@media screen and (max-width: 567px) {
-  form {
+  body {
     display: flex;
-    width: 300px;
-    flex-direction: column;
-    height: 340px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: var(--themeColorCoral);
   }
-  .inputDiv input {
-    width: 230px;
-    height: 33px;
+
+  .passMessageP {
+    font-size: 12px;
+    color: red;
   }
-  button {
-    width: 230px;
-    height: 33px;
+
+  .inputDiv {
+    width: 80%;
   }
-  a {
+
+  body::after {
+    content: '';
     width: 100%;
-    margin-left: 0px;
-    margin-right: -108px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    position: absolute;
+    opacity: 0.2;
   }
-  .signUpLink {
-    margin-right: 0;
+
+  form {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    position: relative;
+    z-index: 100;
   }
-  .imageDiv img {
-    width: 150px;
-    height: 150px;
+
+  .loginDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: inherit;
+    padding: 0;
   }
-  .forgetLink {
-    text-decoration: none;
-    font-size: 10px;
-    margin-top: 10px;
-    text-align: right;
-    color: var(--themeColor);
-    margin-right: 20px;
+
+  .loginDiv h1 {
+    margin: 10px;
   }
+
+  .loginDiv input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    color: black;
+    border: none;
+    border: solid var(--themeColorCoral) 0.5px;
+    border-radius: 10px;
+  }
+
+  input:focus {
+    background-color: rgba(211, 211, 211, 0.384);
+    outline: none;
+  }
+
+  .loginDiv a {
+    color: var(--themeColorCoral);
+  }
+
   .imageDiv {
     display: none;
   }
-}
-=======
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "IRANYekanWebRegular";
-  outline: none;
-}
-@font-face {
-  font-family: "IRANYekanWebRegular";
-  src: url("./Font/IRANYekanWebRegular.ttf");
-}
-@font-face {
-  font-family: "IRANYekanWebLight";
-  src: url("./Font/IRANYekanWebLight.ttf");
-}
-:root {
-  --themeColor: #ff725e;
-  --hoverColor: #f05946;
-}
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--themeColor);
-}
-a {
-  text-decoration: none;
-}
 
-form {
-  width: 600px;
-  height: 400px;
-  background-color: #fff;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.loginDiv {
-  width: 50%;
-  height: 100%;
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  /*  */
-}
-h1 {
-  margin-bottom: 10px;
-}
-.imageDiv {
-  width: 50%;
-  height: 100%;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-}
-.inputDiv {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-}
-.txt {
-  width: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "IRANYekanWebLight";
-  font-weight: 100;
-}
-.signUpLink {
-  color: var(--themeColor);
-  text-decoration: none;
-}
-.signUpLink:hover {
-  color: var(--hoverColor);
-}
-input {
-  border: none;
-  border-radius: 3px;
-  width: 230px;
-  /* height: 28px; */
-  height: 33px;
-  background-color: #fce7e4;
-  padding: 5px 15px;
-  margin-top: 30px;
-  border-radius: 5px;
-}
-input:focus {
-  outline: 1px solid #ff725e;
-}
-::placeholder {
-  font-size: 12px;
-  color: #ff725e;
-}
-
-label {
-  margin-top: 15px;
-  font-size: 12px;
-  padding-bottom: 5px;
-}
-.forgetLink {
-  text-decoration: none;
-  font-size: 10px;
-  margin-top: 10px;
-  text-align: right;
-  color: var(--themeColor);
-  margin-left: 90px;
-}
-button {
-  width: 230px;
-  padding: 7px 40px;
-  background-color: var(--themeColor);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-.imageDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fce7e4;
-}
-.imageDiv img {
-  width: 250px;
-  height: 250px;
-  background-size: cover;
-}
-.passMessageP {
-  font-size: 10px;
-  color: red;
-  padding-top: 5px;
-}
-
-button:hover {
-  background-color: #f05946;
-}
-.forgetLink:hover {
-  color: #f05946;
-}
-
-/* Responsive */
-@media screen and (max-width: 567px) {
-  form {
-    display: flex;
-    width: 300px;
-    flex-direction: column;
-    height: 340px;
-  }
-  .inputDiv input {
-    width: 230px;
-    height: 33px;
-  }
-  button {
-    width: 230px;
-    height: 33px;
-  }
-  a {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: -108px;
-  }
-  .signUpLink {
-    margin-right: 0;
-  }
-  .imageDiv img {
-    width: 150px;
-    height: 150px;
-  }
   .forgetLink {
-    text-decoration: none;
-    font-size: 10px;
-    margin-top: 10px;
-    text-align: right;
-    color: var(--themeColor);
-    margin-right: 20px;
+    font-size: 14px;
   }
+
+  .loginDiv button {
+    padding: 10px 40px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: var(--themeColorCoral);
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width:768px) {
   .imageDiv {
     display: none;
+  }
+
+  .imageDiv img {
+    width: 90%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+
+  form {
+    width: 700px;
+  }
+
+  .imageDiv {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loginDiv {
+    width: 50%;
+  }
+
+  .imageDiv img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+}
+
+@media screen and (min-width:1440px) {
+  form {
+    font-size: 18px;
+    width: 1000px;
+    height: 700px;
+  }
+
+  input {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width:1600px) {
+
+  form {
+    font-size: 20px;
+    width: 1000px;
+    height: 700px;
+  }
+
+  input {
+    font-size: 18px;
+    padding: 30px 20px;
+  }
+
+  form .forgetLink {
+    font-size: 20px;
+  }
+
+  .submit {
+    font-size: 25px;
+  }
+
+  .loginDiv button {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 50px;
+  }
+
+  input::placeholder {
+    font-size: 15px;
+  }
+
+  .passMessageP {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width:1920px) {
+  .passMessageP {
+    font-size: 20px;
+  }
+
+  input {
+    height: 60px;
   }
 }

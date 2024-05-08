@@ -1,49 +1,49 @@
-<<<<<<< HEAD
 const submit = document.querySelector(".submit");
 const passInput = document.querySelector(".passInput");
 const userNameInput = document.querySelector(".userNameInput");
 const passMessageP = document.querySelector(".passMessageP");
 
-submit.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (passInput.value == "" || userNameInput.value == "") {
-    passMessageP.textContent = "یکی از فیلد ها خالی میباشد";
+// function for checking if it is English or not
+function isEnglish(input) {
+  for (let i = 0; i < input.length; i++) {
+    const charCode = input.charCodeAt(i);
+    // Check if the character is within the ASCII range of English letters or numbers
+    if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && (charCode < 48 || charCode > 57)) {
+      return false; // Not an English character or number
+    }
   }
-});
+  return true;
+}
 
-// submit.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   console.log("hi");
-//   if (passInput.value == "") {
-//     passMessageP.textContent = "رمز عبور نمی تواند خالی باشد";
-//   } else if (passInput.value.length < 8) {
-//     passMessageP.textContent = " رمز عبور کمتر از 8 کاراکتر است.";
-//   } else {
-//     passMessageP.style.display = "none";
-//   }
-// });
-=======
-const submit = document.querySelector(".submit");
-const passInput = document.querySelector(".passInput");
-const userNameInput = document.querySelector(".userNameInput");
-const passMessageP = document.querySelector(".passMessageP");
-
+// getting the button from the DOM
 submit.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (passInput.value == "" || userNameInput.value == "") {
-    passMessageP.textContent = "یکی از فیلد ها خالی میباشد";
-  }
+  ValidationInputs();
 });
+// function for validating inputs before submiting the form
+function ValidationInputs() {
+  let Istrue = true;
+  // checking if the value's don't be empty
+  if (passInput.value == "" || userNameInput.value == "") {
+    Istrue = false;
+    passMessageP.textContent = "لطفا اطلاعات را کامل وارد کنید";
+  }
 
-// submit.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   console.log("hi");
-//   if (passInput.value == "") {
-//     passMessageP.textContent = "رمز عبور نمی تواند خالی باشد";
-//   } else if (passInput.value.length < 8) {
-//     passMessageP.textContent = " رمز عبور کمتر از 8 کاراکتر است.";
-//   } else {
-//     passMessageP.style.display = "none";
-//   }
-// });
->>>>>>> 6a4e5a403da6f42c76267d4c9a060db9bae4e02a
+  // checking the Length of the password to be 8 characters
+  else if (passInput.value.length < 8) {
+    Istrue = false;
+    passMessageP.textContent = "رمز باید بیش از 8 کاراکتر باشد";
+  }
+
+  // checking if the input that we get is English or not 
+  else if (!isEnglish(userNameInput.value)) {
+    Istrue = false;
+    passMessageP.textContent = "تمام کارکتر های نام کابری باید به صورت لاتین باشد";
+  }
+
+  // checking if the isTrue = true submit the form
+  if (Istrue) {
+    passInput.value = passInput.value.trim();
+    userNameInput.value = userNameInput.value.trim();
+    document.querySelector('form').submit();
+  }
+}
