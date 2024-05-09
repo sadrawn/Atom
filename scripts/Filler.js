@@ -64,7 +64,7 @@ let Header = `
                         </li>
                     </a>
                     <!-- sign up -->
-                    <a href="signUp.html" class="signup">
+                    <a href="SIgnUp.html" class="signup">
                         <li>
                             <img src="resource/Images/icons/header/icons8-sign-up-32.png" alt="">
                             <p>ثبت نام</p>
@@ -126,7 +126,7 @@ let Header = `
                         </li>
                     </a>
                     <!-- sign up -->
-                    <a href="signUp.html" class="signup">
+                    <a href="SIgnUp.html" class="signup">
                         <li>
                             <p>ثبت نام</p>
                         </li>
