@@ -1,0 +1,366 @@
+@media screen and (min-width: 360px) {
+  form {
+    width: 96%;
+    height: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(243 244 246);
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px 30px;
+  }
+  hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid gainsboro;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  input {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 56px;
+    outline: none;
+    padding: 0px 20px;
+  }
+  .inputs {
+    width: 100%;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  .inputDiv {
+    display: flex;
+    align-items: start;
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .infoBtn {
+    color: white;
+    background-color: #ff725e;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  .info {
+    margin-top: 230px;
+  }
+  .pass {
+    margin-top: 130px;
+  }
+  .inputDivPass {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .passForm {
+    height: 360px;
+  }
+  .inputsPass {
+    width: 100%;
+    height: 100px;
+
+    /* display: flex; */
+    justify-content: right;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  form {
+    width: 96%;
+    height: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(243 244 246);
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px 30px;
+  }
+  hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid gainsboro;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  input {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 670px;
+    height: 56px;
+    outline: none;
+    padding: 0px 20px;
+  }
+  .inputs {
+    width: 100%;
+    height: 210px;
+    /* display: flex; */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  .inputDiv {
+    display: flex;
+    align-items: start;
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .infoBtn {
+    color: white;
+    background-color: #ff725e;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  .info {
+    margin-top: 230px;
+  }
+  .pass {
+    margin-top: 130px;
+  }
+  .inputDivPass {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .passForm {
+    height: 360px;
+  }
+  .inputsPass {
+    width: 100%;
+    height: 100px;
+
+    /* display: flex; */
+    justify-content: right;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  form {
+    width: 80%;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(243 244 246);
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px 30px;
+  }
+  hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid gainsboro;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  input {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 56px;
+    outline: none;
+    padding: 0px 20px;
+  }
+  .inputs {
+    width: 100%;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .inputDiv {
+    display: flex;
+    align-items: start;
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .infoBtn {
+    color: white;
+    background-color: #ff725e;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  .inputDivPass {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .passForm {
+    height: 300px;
+  }
+  .inputsPass {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: right;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid gainsboro;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  input {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 450px;
+    height: 56px;
+    outline: none;
+    padding: 0px 20px;
+  }
+  .inputs {
+    width: 100%;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .inputDiv {
+    display: flex;
+    align-items: start;
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .infoBtn {
+    color: white;
+    background-color: #ff725e;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  .inputDivPass {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .passForm {
+    height: 300px;
+  }
+  .inputsPass {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  input {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 500px;
+    height: 56px;
+    outline: none;
+    padding: 0px 20px;
+  }
+  .inputsPass {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  input {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 570px;
+    height: 56px;
+    outline: none;
+    padding: 0px 20px;
+  }
+  .inputsPass {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  input {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 620px;
+    height: 56px;
+    outline: none;
+    padding: 0px 20px;
+  }
+  .inputsPass {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    gap: 120px;
+  }
+}
+button:hover {
+  background-color: #fa4c35;
+}

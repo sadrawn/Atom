@@ -1,23 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تنظیمات</title>
-    <link rel="stylesheet" href="styles/Main/General.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no">
+  <title>تنظیمات</title>
+  <link rel="stylesheet" href="styles/Main/General.css" />
+  <link rel="stylesheet" href="./styles/Main/Setting.css" />
 </head>
 
 <body>
-    <!-- main  -->
-    <main>
-        <div class="setting">
-            <form action="" method="post">
-                
-            </form>
+  <!-- main  -->
+  <main>
+    <h1>کاربر عزیز؛ خوش اومدی 🌻</h1>
+    <div class="setting">
+      <form action="" method="post">
+        <h3>جزییات حساب کاربری</h3>
+        <hr />
+        <div class="inputs">
+          <div class="inputDiv">
+            <label for="">نام </label>
+            <input type="text" />
+          </div>
+          <div class="inputDiv">
+            <label for="">ایمیل </label>
+            <input type="text" />
+          </div>
+          <div class="inputDiv">
+            <label for="">کدملی </label>
+            <input type="text" />
+          </div>
+          <div class="inputDiv">
+            <label for="">رمز عبور </label>
+            <input type="text" />
+          </div>
         </div>
-    </main>
-    <script type="module" src="scripts/Setting.js"></script>
+        <button class="infoBtn info">ثبت اطلاعات</button>
+      </form>
+      <form class="passForm" action="" method="post">
+        <h3>تغییر رمز عبور</h3>
+        <hr />
+        <div class="inputsPass">
+          <div class="inputDiv">
+            <label for="">رمز عبور فعلی </label>
+            <input type="text" />
+          </div>
+          <div class="inputDiv">
+            <label for="">رمز عبور جدید </label>
+            <input type="text" />
+          </div>
+        </div>
+        <button class="infoBtn pass">تغییر رمز</button>
+      </form>
+    </div>
+  </main>
+  <script type="module" src="scripts/Setting.js"></script>
 </body>
 
 </html>
