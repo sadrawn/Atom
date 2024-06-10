@@ -19,6 +19,7 @@ function isEnglish(input) {
 submit.addEventListener("click", (e) => {
   ValidationInputs();
 });
+
 // function for validating inputs before submiting the form
 function ValidationInputs() {
   let Istrue = true;

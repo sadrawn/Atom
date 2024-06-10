@@ -1,366 +1,116 @@
 @media screen and (min-width: 360px) {
-  form {
-    width: 96%;
-    height: 570px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(204, 204, 204);
-    margin: 50px auto;
-    border-radius: 20px;
-    padding: 20px 30px;
-  }
-  hr {
-    width: 100%;
-    height: 1px;
-    border: 1px solid gainsboro;
-  }
-  h1 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  h3 {
-    margin-bottom: 20px;
-    font-size: 16px;
-  }
-  label {
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-  input {
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    width: 300px;
-    height: 56px;
-    outline: none;
-    padding: 0px 20px;
-  }
-  .inputs {
-    width: 100%;
-    height: 210px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-  }
-  .inputDiv {
-    display: flex;
-    align-items: start;
-    /* justify-content: center; */
-    flex-direction: column;
-  }
-  .infoBtn {
-    color: white;
-    background-color: #ff725e;
-    padding: 10px 30px;
-    border-radius: 15px;
-    border: none;
-    margin-top: 10px;
-    font-size: 17px;
-  }
-  .info {
-    margin-top: 230px;
-  }
-  .pass {
-    margin-top: 130px;
-  }
-  .inputDivPass {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-  }
-  .passForm {
-    height: 360px;
-  }
-  .inputsPass {
-    width: 100%;
-    height: 100px;
+    h1 {
+        font-size: 20px;
+        text-align: center;
+        margin: 10px auto;
+    }
 
-    /* display: flex; */
-    justify-content: right;
-    gap: 80px;
-  }
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .exit {
+        background-color: rgb(255, 32, 32);
+        color: white;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 100px;
+        position: relative;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        padding: 30px 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+        border-radius: 10px;
+        background-color: rgba(185, 185, 185, 0.479);
+        height: 50%;
+    }
+
+    .passwordChange {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .passwordInput {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    .passwordInput input {
+        padding: 10px 20px;
+        border: solid gray 0.5px;
+        border-radius: 30px;
+        direction: ltr;
+    }
+
+    form button {
+        background-color: var(--themeColorCoral);
+        color: white;
+        border: none;
+        max-width: 150px;
+        height: 50px;
+        padding: 10px 30px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
 }
+
 @media screen and (min-width: 768px) {
-  form {
-    width: 96%;
-    height: 570px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(243 244 246);
-    margin: 50px auto;
-    border-radius: 20px;
-    padding: 20px 30px;
-  }
-  hr {
-    width: 100%;
-    height: 1px;
-    border: 1px solid gainsboro;
-  }
-  h1 {
-    text-align: center;
-    margin-top: 20px;
-  }
-  h3 {
-    margin-bottom: 20px;
-  }
-  label {
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-  input {
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    width: 670px;
-    height: 56px;
-    outline: none;
-    padding: 0px 20px;
-  }
-  .inputs {
-    width: 100%;
-    height: 210px;
-    /* display: flex; */
-    justify-content: center;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-  }
-  .inputDiv {
-    display: flex;
-    align-items: start;
-    /* justify-content: center; */
-    flex-direction: column;
-  }
-  .infoBtn {
-    color: white;
-    background-color: #ff725e;
-    padding: 10px 30px;
-    border-radius: 15px;
-    border: none;
-    margin-top: 10px;
-    font-size: 17px;
-  }
-  .info {
-    margin-top: 230px;
-  }
-  .pass {
-    margin-top: 130px;
-  }
-  .inputDivPass {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-  }
-  .passForm {
-    height: 360px;
-  }
-  .inputsPass {
-    width: 100%;
-    height: 100px;
+    .passwordChange {
+        flex-direction: row;
+    }
 
-    /* display: flex; */
-    justify-content: right;
-    gap: 80px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  form {
-    width: 80%;
-    height: 380px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(243 244 246);
-    margin: 50px auto;
-    border-radius: 20px;
-    padding: 20px 30px;
-  }
-  hr {
-    width: 100%;
-    height: 1px;
-    border: 1px solid gainsboro;
-  }
-  h1 {
-    text-align: center;
-    margin-top: 20px;
-  }
-  h3 {
-    margin-bottom: 20px;
-  }
-  label {
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-  input {
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    width: 300px;
-    height: 56px;
-    outline: none;
-    padding: 0px 20px;
-  }
-  .inputs {
-    width: 100%;
-    height: 210px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .inputDiv {
-    display: flex;
-    align-items: start;
-    /* justify-content: center; */
-    flex-direction: column;
-  }
-  .infoBtn {
-    color: white;
-    background-color: #ff725e;
-    padding: 10px 30px;
-    border-radius: 15px;
-    border: none;
-    margin-top: 10px;
-    font-size: 17px;
-  }
+    .passwordInput {
+        font-size: 16px;
+    }
 
-  .inputDivPass {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-  }
-  .passForm {
-    height: 300px;
-  }
-  .inputsPass {
-    width: 100%;
-    height: 100px;
+    form button {
+        font-size: 17px;
+    }
 
-    display: flex;
-    justify-content: right;
-    gap: 80px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  hr {
-    width: 100%;
-    height: 1px;
-    border: 1px solid gainsboro;
-  }
-  h1 {
-    text-align: center;
-    margin-top: 20px;
-  }
-  h3 {
-    margin-bottom: 20px;
-  }
-  label {
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-  input {
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    width: 450px;
-    height: 56px;
-    outline: none;
-    padding: 0px 20px;
-  }
-  .inputs {
-    width: 100%;
-    height: 210px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .inputDiv {
-    display: flex;
-    align-items: start;
-    /* justify-content: center; */
-    flex-direction: column;
-  }
-  .infoBtn {
-    color: white;
-    background-color: #ff725e;
-    padding: 10px 30px;
-    border-radius: 15px;
-    border: none;
-    margin-top: 10px;
-    font-size: 17px;
-  }
+    .passwordInput input {
+        padding: 15px;
+    }
 
-  .inputDivPass {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-  }
-  .passForm {
-    height: 300px;
-  }
-  .inputsPass {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: right;
-    gap: 40px;
-  }
+    .passwordInput {
+        width: 50%;
+    }
 }
-@media screen and (min-width: 1440px) {
-  input {
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    width: 500px;
-    height: 56px;
-    outline: none;
-    padding: 0px 20px;
-  }
-  .inputsPass {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: right;
-    gap: 50px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  input {
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    width: 570px;
-    height: 56px;
-    outline: none;
-    padding: 0px 20px;
-  }
-  .inputsPass {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: right;
-    gap: 40px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  input {
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    width: 620px;
-    height: 56px;
-    outline: none;
-    padding: 0px 20px;
-  }
-  .inputsPass {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: right;
-    gap: 120px;
-  }
-}
-button:hover {
-  background-color: #fa4c35;
+
+@media screen and (min-width:1600px) {
+    .passwordInput {
+        font-size: 18px;
+    }
+
+    form button {
+        font-size: 17px;
+    }
+
+    label {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    label input {
+        width: 20px;
+        height: 20px;
+    }
 }
