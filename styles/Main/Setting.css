@@ -11,6 +11,7 @@
         align-items: start;
         flex-direction: column;
         height: 100vh;
+        background-color: var(--themeColorCoral);
         padding: 20px;
     }
 
@@ -23,6 +24,7 @@
         position: relative;
         bottom: 10px;
         right: 10px;
+        cursor: pointer;
     }
 
     form {
@@ -32,9 +34,9 @@
         width: 100%;
         gap: 30px;
         padding: 30px 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
-        background-color: rgba(185, 185, 185, 0.479);
+        background-color: white;
         height: 50%;
     }
 
@@ -54,9 +56,15 @@
 
     .passwordInput input {
         padding: 10px 20px;
-        border: solid gray 0.5px;
-        border-radius: 30px;
+        border: solid var(--themeColorCoral) 0.5px;
+        border-radius: 10px;
         direction: ltr;
+        transition: all 0.25s;
+    }
+
+    .passwordInput input:focus {
+        outline: 1px solid var(--themeColorCoral);
+        background-color: lightgray;
     }
 
     form button {
