@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no">
+    <title>نظرسنجی</title>
+    <link rel="stylesheet" href="../styles/Main/General.css">
+    <link rel="stylesheet" href="../styles/questions/multipleAnswer.css">
+</head>
+
+<body>
+    <header>
+        <div class="mobileHeader">
+            <div class="currentNumber">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <p id="last">
+                    20
+                </p>
+                /
+                <p id="current">
+                    1
+                </p>
+            </div>
+            <div class="back">
+                <img src="../resource/Images/icons/icons8-back-arrow-64.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <form action="" class="multipleAnswer" method="post">
+            <p class="questionNu">سوال<span class="questionNumber"></span></p>
+            <div class="questionSide">
+                <h2>
+                    سوال اینجا قرار میگیرد.
+                </h2>
+            </div>
+            <div class="answerSide">
+                <div class="question">
+                    <div class="numberSide">1</div>
+                    <div class="textSide">جواب 1</div>
+                    <div class="input">
+                        <input type="radio" name="answerRadio" id="">
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="numberSide">2</div>
+                    <div class="textSide">جواب 2</div>
+                    <div class="input">
+                        <input type="radio" name="answerRadio" id="">
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="numberSide">3</div>
+                    <div class="textSide">جواب 3</div>
+                    <div class="input">
+                        <input type="radio" name="answerRadio" id="">
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="numberSide">4</div>
+                    <div class="textSide">جواب 4</div>
+                    <div class="input">
+                        <input type="radio" name="answerRadio" id="">
+                    </div>
+                </div>
+            </div>
+            <p class="errorMessage" style="color: rgb(255, 23, 23); padding: 10px;"></p>
+            <div class="buttonRow">
+                <button type="button" class="next">بعدی</button>
+                <button type="button" class="previous">قبلی</button>
+            </div>
+        </form>
+    </main>
+    <script src="../scripts/questions/multipleAnswer.js"></script>
+</body>
+
+</html>
