@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no">
-
-  <title>Document</title>
-  <link rel="stylesheet" href="styles/Login&SignUp/signUp.css" />
-  <link rel="stylesheet" href="styles/Main/General.css" />
-</head>
-
-<body>
-  <form action="">
-    <div class="right">
-      <h1>عضویت</h1>
-      <p class="topP">قبلا ثبت نام کرده اید؟ <span><a href="Login.html">وارد شوید</a></span></p>
-      <input class="input name" type="text" placeholder="نام " />
-      <input class="input email" type="email" placeholder="ایمیل" />
-      <input class="input GcodeP" type="number" placeholder="کد ملی" />
-      <p class="GcodeP"></p>
-      <input class="input pass" type="password" placeholder="رمز عبور" />
-      <input class="input confirmation" type="password" placeholder="تکرار رمز عبور" />
-      <p class="confirmationErrorP"></p>
-      <div class="inputs">
-        <div class="radioDiv">
-          <input id="x" type="radio" name="type" checked/>
-          <label for="">هنرجو</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/Login&SignUp/signUp.css" />
+    <link rel="stylesheet" href="styles/Main/General.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="right">
+        <h1>عضویت</h1>
+        <p class="topP">قبلا ثبت نام کرده اید؟ <span>وارد شوید</span></p>
+        <input class="input name" type="text" placeholder="نام " />
+        <input class="input email" type="email" placeholder="ایمیل" />
+        <input class="input GcodeP" type="number" placeholder="کد ملی" />
+        <p class="GcodeP"></p>
+        <input class="input pass" type="password" placeholder="رمز عبور" />
+        <input
+          class="input confirmation"
+          type="password"
+          placeholder="تکرار رمز عبور"
+        />
+        <p class="confirmationErrorP"></p>
+        <div class="inputs">
+          <div class="radioDiv">
+            <input name="input" id="x" type="radio"/>
+            <label for="">هنرجو</label>
+          </div>
+          <div class="radioDiv">
+            <input name="input" id="x" type="radio" />
+            <label for="">اولیا</label>
+          </div>
         </div>
-        <div class="radioDiv">
-          <input id="x" type="radio" name="type"/>
-          <label for="">اولیا</label>
-        </div>
+        <button class="nextBtn">ادامه</button>
       </div>
-      <button class="nextBtn">ادامه</button>
-    </div>
-    <div class="left">
-      <img src="./resource/Images/images (8).png" alt="" />
-    </div>
-  </form>
-  <!-- Script -->
-  <script src="./scripts/signUpScript.js"></script>
-</body>
-
+      <div class="left">
+        <img src="./resource/Images/images (8).png" alt="" />
+      </div>
+    </form>
+    <!-- Script -->
+    <script src="./scripts/signUpScript.js"></script>
+  </body>
 </html>
