@@ -9,6 +9,10 @@
         height: 50px;
     }
 
+    input[type=radio] {
+        display: none;
+    }
+
     header {
         padding-top: 20px;
         width: 100%;
@@ -225,7 +229,8 @@
         width: 18px;
         height: 18px;
     }
-    button{
+
+    button {
         font-size: 20px;
     }
 }
