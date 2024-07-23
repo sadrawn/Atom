@@ -25,3 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+let current = document.querySelector('.currentQue');

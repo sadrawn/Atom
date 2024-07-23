@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Page</title>
-    <link rel="stylesheet" href="../styles/Main/General.css">
-    <link rel="stylesheet" href="../styles/questions/starQuestion.css">
+    <link rel="stylesheet" href="../styles/General.css">
+    <link rel="stylesheet" href="../styles/starQuestion.css">
 </head>
 
 <body>
@@ -16,6 +16,11 @@
     <main class="main">
         <div class="progress-container">
             <div class="progress-bar" id="progress-bar"></div>
+            <div id="progressValue">
+                <p id="currentQue">1</p>
+                /
+                <p id="questionNUmber">20</p>
+            </div>
         </div>
         <form id="survey-form">
             <div class="questionSide">
@@ -43,7 +48,7 @@
     <footer class="footer">
         <p>باتشکر از بازخورد شما!</p>
     </footer>
-    <script src="../scripts/questions/starQuestion.js"></script>
+    <script src="../scripts/starQuestion.js"></script>
 </body>
 
 </html>
