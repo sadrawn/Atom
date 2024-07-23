@@ -1,4 +1,0 @@
-type = 0,
-hello are you here,
-type = 1,
-hello are you here 2,

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const stars = document.querySelectorAll('.stars span');
     const ratingValue = document.getElementById('rating-value');
     const errorMessage = document.getElementById('error-message');
+    let input = document.querySelector('input[type=hidden]');
     const nextButton = document.getElementById('next-button');
 
     stars.forEach(star => {
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         ratingValue.textContent = value + '.0';
+        input.value = value + ".0";
     }
 
     nextButton.addEventListener('click', () => {

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const progressBar = document.getElementById('progress-bar');
     const questions = document.querySelectorAll('.question');
-    const submitButton = document.getElementById('submit-button');
+    const submitButton = document.getElementById('next-button');
     const errorMessage = document.getElementById('error-message');
     let isAnswered = false;
 
@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // document.getElementById('survey-form').submit(); // Uncomment to submit the form
         }
     });
-});
 
-let current = document.querySelector('.currentQue');
+
+    function ProgressChange() {
+        let current = document.getElementById('currentQue').textContent;
+        let progressBar = document.querySelector('.progress-bar');
+        progressBar.style.width = Number(current) * 5 + "%";
+    }
+    ProgressChange()
+});
