@@ -1,59 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chart Example</title>
+    <title>صفحه با نمودار و سوالات</title>
+    <link rel="stylesheet" href="styles/General.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Tahoma', sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0;
         }
 
         .container {
             display: flex;
-            flex-direction: row;
-            width: 80%;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .chart-section,
-        .info-section {
-            flex: 1;
+            width: 100%;
+            height: 100vh;
+            direction: ltr;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
         }
 
-        .chart-section {
-            background-color: #f9f9f9;
+        .chart-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px 0;
+        }
+
+        .questions-container {
+            width: 50%;
+            max-width: 500px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        #questionSelect {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #questionDisplay {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        form button {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            border: none;
+            background-color: var(--themeColorCoral);
+            cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .info-section {
-            background-color: #fff;
-            padding: 20px;
+        form button img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
-        .info-section h2 {
-            margin-top: 0;
+        .next {
+            background-color: white;
+            border: solid 1px var(--themeColorCoral);
         }
 
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
+        .before {
+            transform: rotate(180deg);
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -61,13 +96,22 @@
 
 <body>
     <div class="container">
-        <div class="chart-section">
+
+        <div class="chart-container">
             <canvas id="myChart"></canvas>
         </div>
-
+        <div class="questions-container">
+            <form action="">
+                <!-- will be filled by jalal -->
+                <div id="questionDisplay"></div>
+                <button class="before"><img src="resource/Images/icons/icons8-back-arrow-64.png" alt=""></button>
+                <button class="next"><img src="resource/Images/icons/icons8-back-arrow-64.png" alt=""></button>
+            </form>
+        </div>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Chart.js initialization
             const ctx = document.getElementById('myChart').getContext('2d');
             const myChart = new Chart(ctx, {
                 type: 'bar',
@@ -104,6 +148,28 @@
                 }
             });
         });
+
+        function showQuestion() {
+            const questionSelect = document.getElementById('questionSelect');
+            const questionDisplay = document.getElementById('questionDisplay');
+            const selectedValue = questionSelect.value;
+
+            let questionText = '';
+            switch (selectedValue) {
+                case '1':
+                    questionText = 'این سوال شماره ۱ است.';
+                    break;
+                case '2':
+                    questionText = 'این سوال شماره ۲ است.';
+                    break;
+                case '3':
+                    questionText = 'این سوال شماره ۳ است.';
+                    break;
+                default:
+                    questionText = '';
+            }
+            questionDisplay.textContent = questionText;
+        }
 
     </script>
 </body>
